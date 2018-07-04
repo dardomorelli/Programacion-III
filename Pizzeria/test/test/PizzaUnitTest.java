@@ -12,7 +12,7 @@ class PizzaUnitTest {
 
 	@Test
 	void instanciarPizza_pizzaConBase_ReturnBase() {
-		Pizza unaPizza=new Pizza("Napolitana",100.80d,new Base("Masa tipo"),cubiertaNapolitana());
+		Pizza unaPizza=new Pizza("Napolitana",100.80,new Base("Masa tipo"),cubiertaNapolitana());
 		
 		assertEquals("Masa Tipo", unPedido.getBase());
 	}

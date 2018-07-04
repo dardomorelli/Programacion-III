@@ -3,16 +3,10 @@ package aeropuerto;
 public class Aerolinea {
 	private Integer idAerolinea;
 	private String nombre;
-	private static Integer id=0;
 	
-	public Aerolinea(String nombreAerolinea) {
-		++id;
+	public Aerolinea(Integer id, String nombreAerolinea) {
 		nombre=nombreAerolinea;
 		idAerolinea=id;
-	}
-	
-	public void setNombreAerolinea (String nombreAerolinea) {
-		nombre=nombreAerolinea;
 	}
 	
 	public Integer getIdAerolinea () {

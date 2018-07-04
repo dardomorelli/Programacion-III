@@ -7,14 +7,23 @@ public class Aeropuerto {
 	private String codigo;
 	
 	
-	public void Aeropuerto (String nombreAeropuerto, String ciudad, String codigo) {
+	public Aeropuerto (Integer id, String nombreAeropuerto, Ciudad ciudad, String codigoAeropuerto) {
 		nombre = nombreAeropuerto;
-		this.codigo = codigo;
-		
-		
+		codigo = codigoAeropuerto;
+		this.ciudad=ciudad;
+		idAeropuerto = id;
+			
 	}
-		
-		
-	
-
+	public Integer getId() {
+		return idAeropuerto;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public Ciudad getCiudad() {
+		return ciudad;
+	}
+	public String getCodigo() {
+		return codigo;
+	}
 }
